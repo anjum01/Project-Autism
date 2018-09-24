@@ -1,0 +1,872 @@
+
+/* Page Styles */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+.skrollr-desktop body {
+    height:100% !important;
+}
+
+
+#skrollr-body {
+    height:100%;
+    position:relative;
+    overflow: hidden;
+}
+
+/* Page Styles End */
+
+/*Navbar start */
+
+.navbar-default{
+  background-color:#3f5d8c;
+  border-color:rgba(34,34,34,.05);
+  -webkit-transition:all .35s;
+  -moz-transition:all .35s;
+  transition:all .35s;
+  
+}
+ .navbar-default .navbar-header .navbar-brand{
+
+  /*color: #ef374c !important; */
+  color: #eee;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 20px;
+ }
+ .navbar-default .navbar-header .navbar-brand:hover{
+  color:#fff;
+ }
+
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(55, 64, 90, 0.65);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.navbar img{
+    width:60px;
+    height: 60px;
+    padding:5px;
+    float:left;
+
+}
+
+/*Navbar end */
+
+/* Body & Background */
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	background: #c6c9ce;
+    background-size: cover;
+    background-attachment: fixed;
+	
+}
+
+/* Body & Background End */
+
+/* Header/Title */
+
+.header {
+    text-align: center;
+    margin-top: 4em;
+}
+.header h1 {
+    font-size: 3.5em;
+    color: #02307a;
+    font-weight: 400;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+/* Header/Title End */
+
+/*Content*/
+.row{
+	padding-bottom:30px;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 65%;
+
+
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  padding-left: 20px;
+  padding-right:50px;
+  /*margin-top: 3%;*/
+  
+
+}
+.row .leftcolumn .media-content h1{
+	font-size:40px;
+	color:#1976d3;
+}
+.row .rightcolumn .media-content h2{
+	text-align: center;
+	color:#2196F3;
+	font-size:25px;
+	padding-bottom:20px;
+}
+/* user-reply Button*/
+
+/* Like-Unlike */
+.like-unlike{
+	padding-top:5px;
+	float:right;
+}
+.like-unlike .fa {
+    font-size: 30px;
+    cursor: pointer; 
+    color:#02307a;	
+}
+.like-unlike .fa:hover {
+  color: #2196F3;
+}
+.user-reply{
+	padding-top:20px;
+	padding-bottom:10px;
+}
+.user-reply .btn {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #02307a;
+  border: 20px;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top:10px;
+
+}
+
+
+.user-reply .btn:hover {background-color: #2196F3}
+
+.user-reply .btn:active {
+  background-color: #2196F3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.user-reply #myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+	display:none;
+}
+/* comments
+ * -------------------------------------------------- */
+ .row2{
+	 max-width: 950px;
+ }
+#comments {
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+	padding-left:20px;
+	padding-right:20px;
+	display:none;
+	
+}
+
+
+#comments h3 {
+	margin-bottom: 1.5rem;
+}
+
+#comments ol,
+#comments ul {
+	list-style: none;
+}
+
+.commentlist {
+	margin: 3rem 0 5.4rem;
+	padding: 0;
+}
+
+.commentlist > li {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 1.8rem 0;
+	padding-left: 14%;
+}
+
+.commentlist li .user-dp {
+	position: absolute;
+	left: 0;
+	display: block;
+	height: 6rem;
+	width: 6rem;
+}
+
+.commentlist li .user-dp img {
+	margin-top: 0.6rem;
+	height:80px;
+	width: 80px;;
+	border-radius: 100%;
+}
+
+.commentlist li .comment-info cite {
+	font-family: "montserrat-bold", sans-serif;
+	font-size: 1.8rem;
+	font-style: normal;
+	color: #151515;
+}
+
+.commentlist li .comment-info .comment-meta {
+	font-family: "muli-regular", sans-serif;
+	font-size: 1rem;
+	line-height: 3rem;
+	display: block;
+	color: #888888;
+}
+
+
+.commentlist li .comment-info .comment-meta .reply {
+	font-family: "montserrat-bold", sans-serif;
+	color: #151515;
+}
+
+.commentlist li .comment-info .comment-meta .sep {
+	margin: 0 5px;
+}
+
+.commentlist li .comment-text {
+	clear: both;
+	margin: 1.8rem 0 0 0;
+	padding: 0;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.commentlist li ul.children {
+	margin: 0;
+	padding: 1.8rem 0 0 0;
+}
+
+.commentlist li ul.children li {
+	padding-left: 5%;
+	padding-top: 1.8rem;
+}
+/* reply*/
+
+
+#reply{
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+	padding-left:20px;
+	padding-right:20px;
+	display:none;
+}
+/* reply form
+ * ---------------------------- */
+#reply .respond {
+	padding-top: 20px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#reply form {
+	padding-top: 20px;
+	
+}
+
+#reply form .form-field {
+	margin-bottom: 3.9rem;
+}
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+
+	
+
+}
+
+#reply .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+	
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+	height:55px;
+  margin-top:13px;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn2 {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn2:hover {
+    opacity: 1;
+}
+/* responsive:
+ * comments
+ * ------------------------------------------------------------------- */
+ 
+@media only screen and (max-width:768px) {
+	#reply form button {
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#comments h3 {
+		text-align: center;
+	}
+
+	.commentlist > li {
+		padding-left: 0;
+	}
+
+	.commentlist li .user-dp {
+		display: none;
+	}
+
+}
+
+
+.media-content {
+  background:#f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+}
+.primary-content{
+	text-align: justify;
+}
+.primary-content h2{
+	font-size: 2.0em;
+}
+primary-content a:hover{
+	text-decoration: underline;
+	color:#0c3872;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Slideshow */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Search Box */
+.search-box{
+    box-sizing: border-box;
+}
+form.search-box input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searching.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+form.search-box input[type=text]:focus {
+    width: 100%;
+}
+
+/* New Posts */
+.post h2{
+	text-align: center;
+	color:#2196F3;
+	font-size:25px;
+	padding-bottom:20px;
+}
+.avatar{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.post-content{
+	padding-bottom:20px;
+}
+.post-content h1{
+	font-size:22px;
+	color:#d81c1c;
+}
+.post-content img{
+	float: left;
+}
+
+/* Rating */
+
+.heading {
+    font-size: 25px;
+    margin-right: 0px;
+	text-align: center;
+	color:#2196F3;
+}
+
+.fa {
+    font-size: 10px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.rating:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #d9dbe0;
+    text-align: center;
+    color: #adaeba;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+
+
+/*Footer*/
+
+footer{
+    background-color:#2f4870;
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 55px;
+    overflow: hidden;
+	padding-top:20px;
+}
+/* Discussion */
+.chat-light {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.chat-dark {
+    border-color: #ccc;
+    background-color: #ddd;
+	border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.chat-light::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.chat-dark::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.chat-light img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.chat-dark img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+.media-content .join {
+  padding: 15px 25px;
+  padding-bottom:20px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #337ef7;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+   margin: 4px 2px;
+   position:center;
+   width:100%
+}
+
+.join:hover {background-color: #0d4399}
+
+.join:active {
+  background-color: #0d4399;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* Footer left */
+
+footer .footer-left{
+    float: left;
+}
+
+footer h3{
+    color:  #0e87f2;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+footer .footer-links{
+    color: #05fc15;
+    margin: 22px 0 14px;
+    padding: 0;
+}
+
+footer .footer-links a{
+    display: inline-block;
+    text-decoration: none;
+    color: #05fc15;
+}
+
+
+footer .social-buttons{
+    margin: 22px 0 14px;
+    padding: 0;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+
+footer .footer-company-name{
+    color:  #010f21;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer right */
+
+footer .footer-right{
+    float: right;
+    width: 100%;
+}
+
+/* The search form */
+
+footer form{
+    position: relative;
+}
+
+footer form input{
+    display: block;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #32383A;
+    width: 100%;
+    padding: 18px 50px 18px 18px;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #eee;
+}
+
+footer form input:focus{
+    border-color:#ccc;
+}
+
+/* Changing the placeholder color */
+
+footer form input::-webkit-input-placeholder {
+    color:  #5c666b;
+}
+
+footer form input::-moz-placeholder {
+    opacity: 1;
+    color:  #5c666b;
+}
+
+footer form input:-ms-input-placeholder{
+    color:  #5c666b;
+}
+
+/* The magnify glass icon */
+
+footer form i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+
+    color: #d1d2d2;
+    font-size: 20px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1100px) {
+
+    footer .footer-left{
+        margin-bottom: 50px;
+    }
+
+    footer .footer-right{
+        float: left;
+        clear: left;
+    }
+
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
